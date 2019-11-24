@@ -7,19 +7,15 @@ export const useStage = (player, resetPlayer) => {
 
   useEffect(() => {
     setRowsCleared(0);
-
     const sweepRows = newStage =>
-      newStage.reduce((acc, row) => {
-        // check the row contains any 0, if it does, it should be cleared, if it is -1, then row should be swept
+      newStage.reduce((ack, row) => {
         if (row.findIndex(cell => cell[0] === 0) === -1) {
           setRowsCleared(prev => prev + 1);
-          // create new rows at top (shift the cleared rows down)
-          acc.unshift(new Array(newStage[0].length).fill([0, 'clear']));
-          return acc;
+          ack.unshift(new Array(newStage[0].length).fill([0, 'clear']));
+          return ack;
         }
-        // if not a full row, return row as it is
-        acc.push(row);
-        return acc;
+        ack.push(row);
+        return ack;
       }, []);
 
     const updateStage = prevStage => {
@@ -34,22 +30,28 @@ export const useStage = (player, resetPlayer) => {
           if (value !== 0) {
             newStage[y + player.pos.y][x + player.pos.x] = [
               value,
-              `${player.collided ? 'merged' : 'clear'}`
+              `${player.collided ? 'merged' : 'clear'}`,
             ];
           }
         });
       });
-      // Then check if we collided
+      // Then check if we got some score if collided
       if (player.collided) {
         resetPlayer();
         return sweepRows(newStage);
       }
-
       return newStage;
     };
 
+    // Here are the updates
     setStage(prev => updateStage(prev));
-  }, [player, resetPlayer]);
+  }, [
+    player.collided,
+    player.pos.x,
+    player.pos.y,
+    player.tetromino,
+    resetPlayer,
+  ]);
 
-  return [stage, setStage];
+  return [stage, setStage, rowsCleared];
 };
