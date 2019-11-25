@@ -8,7 +8,7 @@ export const TETROMINOS = {
       [0, 'I', 0, 0]
     ],
     color: '80, 227, 230',
-    emoji: 'https://i.ibb.co/xJ4534p/tinysmiley.png'
+    emoji: 'https://i.ibb.co/wMqJr20/tinysmiley.png'
   },
   J: {
     shape: [
@@ -61,7 +61,7 @@ export const TETROMINOS = {
       [0, 0, 0]
     ],
     color: '227, 78, 78',
-    emoji: 'https://i.ibb.co/DY9DLg8/sadEmoji.png'
+    emoji: 'https://i.ibb.co/18RngZb/Sad-Face-Emoji-grande.png'
   }
 };
 

@@ -14,6 +14,7 @@ export const ControlButton = styled.img`
     color: white;
     height: 10vh;
     width: 20%;
+    border: 4px solid #333
     border-radius: 15px;
     background-color: teal;
     border: none;
