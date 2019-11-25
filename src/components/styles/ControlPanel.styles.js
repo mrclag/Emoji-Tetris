@@ -8,7 +8,9 @@ export const ControlWrapper = styled.div`
 `;
 
 export const ControlButton = styled.img`
+  display: none;
   @media screen and (max-width: 800px) {
+    display: unset;
     color: white;
     height: 10vh;
     width: 20%;
