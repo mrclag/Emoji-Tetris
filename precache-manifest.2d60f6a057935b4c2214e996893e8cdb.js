@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1bb7067c49f7157c11c5b4ae53007fa6",
+    "revision": "e3081d99602d02901c49a65c0e86abd3",
     "url": "/index.html"
   },
   {
-    "revision": "eca369f0718428cb2355",
+    "revision": "2d7776744280bd1597db",
     "url": "/static/css/main.3e9a850e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.55357438.chunk.js"
   },
   {
-    "revision": "eca369f0718428cb2355",
-    "url": "/static/js/main.d1ba0f39.chunk.js"
+    "revision": "2d7776744280bd1597db",
+    "url": "/static/js/main.f2ec299f.chunk.js"
   },
   {
     "revision": "c8dd6548aed639918a50",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Pixel-LCD-7.e2897552.woff"
   },
   {
-    "revision": "2810fe6b5435e75b3dad63e341b97d02",
-    "url": "/static/media/bg.2810fe6b.png"
+    "revision": "eb18f7dab83ad73d185d081a12768575",
+    "url": "/static/media/emojiwallpaper.eb18f7da.jpg"
   },
   {
     "revision": "cf9ed1dd469328409a1389f2150f4a58",
