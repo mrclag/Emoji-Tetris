@@ -1,8 +1,10 @@
 import firebase from 'firebase';
 import 'firebase/firestore';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 var firebaseConfig = {
-  apiKey: 'AIzaSyAY88bHELhGIz6Bso58Nvl4qYYfvZ-dGEw',
+  apiKey: API_KEY,
   authDomain: 'emojitetris.firebaseapp.com',
   databaseURL: 'https://emojitetris.firebaseio.com',
   projectId: 'emojitetris',
