@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.3e9a850e.chunk.css",
-    "main.js": "/static/js/main.ff5c2f50.chunk.js",
-    "main.js.map": "/static/js/main.ff5c2f50.chunk.js.map",
+    "main.js": "/static/js/main.a10c3f87.chunk.js",
+    "main.js.map": "/static/js/main.a10c3f87.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f7aa9e57.js",
     "runtime-main.js.map": "/static/js/runtime-main.f7aa9e57.js.map",
     "static/js/2.55357438.chunk.js": "/static/js/2.55357438.chunk.js",
     "static/js/2.55357438.chunk.js.map": "/static/js/2.55357438.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.92371daf739d65704e09270025c77563.js": "/precache-manifest.92371daf739d65704e09270025c77563.js",
+    "precache-manifest.570482359693d16da93ddf64db761d6b.js": "/precache-manifest.570482359693d16da93ddf64db761d6b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.3e9a850e.chunk.css.map": "/static/css/main.3e9a850e.chunk.css.map",
     "static/media/index.css": "/static/media/Pixel-LCD-7.e2897552.woff",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.f7aa9e57.js",
     "static/js/2.55357438.chunk.js",
     "static/css/main.3e9a850e.chunk.css",
-    "static/js/main.ff5c2f50.chunk.js"
+    "static/js/main.a10c3f87.chunk.js"
   ]
 }
