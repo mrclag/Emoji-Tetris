@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
-import bgImage from '../../img/bg.png';
+import bgImage from '../../img/emojiwallpaper.jpg';
 
 export const StyledTetrisWrapper = styled.div`
   width: 100vw;
   height: 100vh;
-  background: url(${bgImage}) #000;
-  background-size: cover;
+  background: url(${bgImage}) #fff no-repeat;
+  background-size: auto 100%;
   overflow: hidden;
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+  }
 `;
 
 export const StyledTetris = styled.div`
@@ -15,7 +19,7 @@ export const StyledTetris = styled.div`
   align-items: flex-start;
   padding: 40px;
   margin: 0 auto;
-  max-width: 900px;
+  justify-content: center;
 
   aside {
     width: 100%;
@@ -27,13 +31,12 @@ export const StyledTetris = styled.div`
   @media screen and (max-width: 800px) {
     display: block;
     max-width: unset;
+    padding: 30px;
 
     aside {
-      position: absolute;
-      bottom: 5vw;
+      padding: 0px;
+      padding-top: 13vh;
       display: flex;
-      align-items: center;
-      width: 80vw;
       height: 10vh;
       max-width: unset;
     }

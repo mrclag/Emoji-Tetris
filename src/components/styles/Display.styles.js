@@ -6,20 +6,20 @@ export const StyledDisplay = styled.div`
   align-items: center;
   margin: 0 0 20px 0;
   padding: 20px;
-  border: 4px solid #333
+  border: 3px solid #333;
   min-height: 30px;
   width: 100%;
   border-radius: 20px;
-  color: ${props => (props.gameOver ? 'red' : '#999')};
-  background: #000;
+  color: ${props => (props.gameOver ? 'red' : '#333')};
+  background: #f7f7f7;
   font-family: Pixel, Arial, Helvitica, sans-serif;
   font-size: 0.8rem;
 
-@media screen and (max-width: 800px){
-  min-height: unset;
-  height: 20px;
-  padding: 10px;
-  margin: 0
-  width: 40vw;
-}
+  @media screen and (max-width: 800px) {
+    min-height: unset;
+    height: 20px;
+    padding: 10px;
+    margin: 0;
+    width: 150px;
+  }
 `;

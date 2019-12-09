@@ -108,29 +108,31 @@ const Tetris = () => {
       onKeyDown={e => move(e)}
       onKeyUp={keyUp}
     >
-      <StyledTetris>
-        <Stage stage={stage} />
-        <ControlPanel
-          movePlayer={movePlayer}
-          dropPlayer={dropPlayer}
-          playerRotate={playerRotate}
-          stage={stage}
-          setDropTime={setDropTime}
-          level={level}
-        />
-        <aside>
-          {gameOver ? (
-            <Display gameOver={gameOver} text="Game Over" />
-          ) : (
-            <div>
-              <Display text={`Score: ${score}`} />
-              <Display text={`rows: ${rows}`} />
-              <Display text={`Level: ${level}`} />
-            </div>
-          )}
-          <StartButton callback={startGame} />
-        </aside>
-      </StyledTetris>
+      <div className="overlay">
+        <StyledTetris>
+          <Stage stage={stage} />
+          <ControlPanel
+            movePlayer={movePlayer}
+            dropPlayer={dropPlayer}
+            playerRotate={playerRotate}
+            stage={stage}
+            setDropTime={setDropTime}
+            level={level}
+          />
+          <aside>
+            {gameOver ? (
+              <Display gameOver={gameOver} text="Game Over" />
+            ) : (
+              <div>
+                <Display text={`Score: ${score}`} />
+                <Display text={`rows: ${rows}`} />
+                <Display text={`Level: ${level}`} />
+              </div>
+            )}
+            <StartButton callback={startGame} />
+          </aside>
+        </StyledTetris>
+      </div>
     </StyledTetrisWrapper>
   );
 };
