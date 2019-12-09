@@ -14,8 +14,7 @@ export const ControlButton = styled.img`
   @media screen and (max-width: 800px) {
     display: unset;
     color: white;
-    height: 10vh;
-    padding: 3px;
+    height: 8vh;
     width: 20%;
     border: 3px solid #333
     border-radius: 15px;

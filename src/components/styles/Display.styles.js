@@ -17,8 +17,8 @@ export const StyledDisplay = styled.div`
 
   @media screen and (max-width: 800px) {
     min-height: unset;
-    height: 20px;
-    padding: 10px;
+    height: 3.33vh;
+    padding: 8px;
     margin: 0;
     width: 150px;
   }

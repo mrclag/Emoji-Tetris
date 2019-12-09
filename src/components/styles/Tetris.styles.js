@@ -35,7 +35,7 @@ export const StyledTetris = styled.div`
 
     aside {
       padding: 0px;
-      padding-top: 12vh;
+      padding-top: 10vh;
       display: flex;
       height: 10vh;
       max-width: unset;
