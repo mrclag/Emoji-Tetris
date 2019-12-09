@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.3b530ed1.chunk.css",
-    "main.js": "/static/js/main.065acadb.chunk.js",
-    "main.js.map": "/static/js/main.065acadb.chunk.js.map",
+    "main.js": "/static/js/main.f0f5058f.chunk.js",
+    "main.js.map": "/static/js/main.f0f5058f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f7aa9e57.js",
     "runtime-main.js.map": "/static/js/runtime-main.f7aa9e57.js.map",
-    "static/js/2.2e4d3b06.chunk.js": "/static/js/2.2e4d3b06.chunk.js",
-    "static/js/2.2e4d3b06.chunk.js.map": "/static/js/2.2e4d3b06.chunk.js.map",
+    "static/js/2.bcd07a45.chunk.js": "/static/js/2.bcd07a45.chunk.js",
+    "static/js/2.bcd07a45.chunk.js.map": "/static/js/2.bcd07a45.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f0e0483554b34904b7ef4a410c543feb.js": "/precache-manifest.f0e0483554b34904b7ef4a410c543feb.js",
+    "precache-manifest.8eda8dc4c42eba247aee8eb52fb68e5a.js": "/precache-manifest.8eda8dc4c42eba247aee8eb52fb68e5a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.3b530ed1.chunk.css.map": "/static/css/main.3b530ed1.chunk.css.map",
     "static/media/index.css": "/static/media/Pixel-LCD-7.e2897552.woff",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f7aa9e57.js",
-    "static/js/2.2e4d3b06.chunk.js",
+    "static/js/2.bcd07a45.chunk.js",
     "static/css/main.3b530ed1.chunk.css",
-    "static/js/main.065acadb.chunk.js"
+    "static/js/main.f0f5058f.chunk.js"
   ]
 }
