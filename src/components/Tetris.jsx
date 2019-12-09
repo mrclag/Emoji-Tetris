@@ -14,6 +14,8 @@ import Stage from './Stage';
 import Display from './Display';
 import StartButton from './StartButton';
 import ControlPanel from './ControlPanel';
+import Highscores from './Highscores';
+import GameOver from './GameOver';
 
 const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
@@ -24,6 +26,8 @@ const Tetris = () => {
   const [score, setScore, rows, setRows, level, setLevel] = useGameStatus(
     rowsCleared
   );
+
+  const [modalOpen, setModalOpen] = useState(false);
 
   console.log('re-render');
 
@@ -66,6 +70,7 @@ const Tetris = () => {
     } else {
       // Game over!
       if (player.pos.y < 1) {
+        setModalOpen(true);
         console.log('GAME OVER!!!');
         setGameOver(true);
         setDropTime(null);
@@ -110,6 +115,7 @@ const Tetris = () => {
     >
       <div className="overlay">
         <StyledTetris>
+          <Highscores />
           <Stage stage={stage} />
           <ControlPanel
             movePlayer={movePlayer}
@@ -121,11 +127,20 @@ const Tetris = () => {
           />
           <aside>
             {gameOver ? (
-              <Display gameOver={gameOver} text="Game Over" />
+              <>
+                <Display gameOver={gameOver} text="Game Over" />
+                <GameOver
+                  isOpen={modalOpen}
+                  toggle={setModalOpen}
+                  score={score}
+                  rows={rows}
+                  level={level}
+                />
+              </>
             ) : (
               <div>
                 <Display text={`Score: ${score}`} />
-                <Display text={`rows: ${rows}`} />
+                <Display text={`Rows: ${rows}`} />
                 <Display text={`Level: ${level}`} />
               </div>
             )}

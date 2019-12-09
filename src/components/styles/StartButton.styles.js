@@ -10,7 +10,8 @@ export const StyledStartButton = styled.button`
   border: none;
   color: #333;
   background: #fac632;
-  font-family: Pixel, Arial, Helvetica, sans-serif;
+  font-family: Orbitron, Arial, Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 1rem;
   outline: none;
   cursor: pointer;

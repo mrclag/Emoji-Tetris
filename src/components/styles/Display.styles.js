@@ -12,8 +12,9 @@ export const StyledDisplay = styled.div`
   border-radius: 20px;
   color: ${props => (props.gameOver ? 'red' : '#333')};
   background: #f7f7f7;
-  font-family: Pixel, Arial, Helvitica, sans-serif;
+  font-family: Orbitron, Arial, Helvitica, sans-serif;
   font-size: 0.8rem;
+  font-weight: bold;
 
   @media screen and (max-width: 800px) {
     min-height: unset;
