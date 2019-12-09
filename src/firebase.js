@@ -5,13 +5,13 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 var firebaseConfig = {
   apiKey: API_KEY,
-  authDomain: 'emojitetris.firebaseapp.com',
-  databaseURL: 'https://emojitetris.firebaseio.com',
-  projectId: 'emojitetris',
-  storageBucket: 'emojitetris.appspot.com',
-  messagingSenderId: '716892922107',
-  appId: '1:716892922107:web:9363fd1a060dd80899d05e',
-  measurementId: 'G-8TLQV8Q61J'
+  authDomain: 'emoji-tetris1.firebaseapp.com',
+  databaseURL: 'https://emoji-tetris1.firebaseio.com',
+  projectId: 'emoji-tetris1',
+  storageBucket: 'emoji-tetris1.appspot.com',
+  messagingSenderId: '42304859550',
+  appId: '1:42304859550:web:378c7ed82a1a9b7c367a8f',
+  measurementId: 'G-HFTQ64M8VB'
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
