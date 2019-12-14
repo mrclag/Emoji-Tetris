@@ -69,6 +69,8 @@ export const GameOver = ({ isOpen, toggle, score, rows, level }) => {
               type="text"
               value={name}
               onChange={e => setName(e.currentTarget.value)}
+              autofocus="true"
+              maxLength="14"
             />
             <button>Submit</button>
           </form>

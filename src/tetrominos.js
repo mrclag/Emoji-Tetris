@@ -8,7 +8,7 @@ export const TETROMINOS = {
       [0, 'I', 0, 0]
     ],
     color: '80, 227, 230',
-    emoji: 'https://i.ibb.co/wMqJr20/tinysmiley.png'
+    emoji: 'https://i.ibb.co/4ZT0y40/smiley-Emoji.png'
   },
   J: {
     shape: [
@@ -62,11 +62,16 @@ export const TETROMINOS = {
     ],
     color: '227, 78, 78',
     emoji: 'https://i.ibb.co/18RngZb/Sad-Face-Emoji-grande.png'
+  },
+  P: {
+    shape: [['P']],
+    color: '227, 78, 78',
+    emoji: 'https://i.ibb.co/X5HXZpS/rainbowpoop-Emoji.png'
   }
 };
 
 export const randomTetromino = () => {
-  const tetrominos = 'IJLOSTZ';
+  const tetrominos = 'IJLOSTZP';
   const randTetromino =
     tetrominos[Math.floor(Math.random() * tetrominos.length)];
   return TETROMINOS[randTetromino];

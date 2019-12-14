@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 export const ControlWrapper = styled.div`
   color: red;
-  position: absolute;
   display: flex;
   justify-content: space-between;
-  margin-top: 0.75vh;
+  margin-top: 0.5vh;
   width: 320px;
+  @media screen and (min-width: 800px) {
+    position: absolute;
+  }
 `;
 
 export const ControlButton = styled.img`

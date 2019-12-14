@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 
 import { createStage, checkCollision } from '../gameHelpers';
-import { StyledTetrisWrapper, StyledTetris } from './styles/Tetris.styles';
+import {
+  StyledTetrisWrapper,
+  StyledTetris,
+  HeaderBar,
+  LogoImg
+} from './styles/Tetris.styles';
 
 // Custom Hooks
 import { useInterval } from '../hooks/useInterval';
 import { usePlayer } from '../hooks/usePlayer';
 import { useStage } from '../hooks/useStage';
 import { useGameStatus } from '../hooks/useGameStatus';
+import logo from '../img/logo.png';
 
 // Components
 import Stage from './Stage';
@@ -114,6 +120,9 @@ const Tetris = () => {
       onKeyUp={keyUp}
     >
       <div className="overlay">
+        <HeaderBar>
+          <LogoImg src={logo} alt="logo" />
+        </HeaderBar>
         <StyledTetris>
           <Highscores />
           <Stage stage={stage} />
