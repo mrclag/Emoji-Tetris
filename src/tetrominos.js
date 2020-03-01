@@ -36,9 +36,9 @@ export const TETROMINOS = {
   },
   P: {
     shape: [
+      [0, 0, 0],
       ['P', 'P', 'P'],
-      ['P', 'P', 0],
-      [0, 0, 0]
+      ['P', 'P', 0]
     ],
     color: '223, 217, 36',
     emoji: 'https://i.ibb.co/WcRpDxY/tears-Emoji.png'
@@ -54,9 +54,9 @@ export const TETROMINOS = {
   },
   U: {
     shape: [
-      [0, 0, 0],
       ['U', 0, 'U'],
       ['U', 'U', 'U']
+      [0, 0, 0],
     ],
     color: '223, 173, 36',
     emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'

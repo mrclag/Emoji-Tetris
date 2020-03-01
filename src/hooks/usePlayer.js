@@ -18,6 +18,29 @@ export const usePlayer = () => {
     return mtrx.reverse();
   }
 
+  function flip(matrix) {
+    const mtrx = matrix.map(x => x.reverse());
+    return mtrx;
+  }
+
+  function playerFlip(stage) {
+    const clonedPlayer = JSON.parse(JSON.stringify(player));
+    clonedPlayer.tetromino = flip(clonedPlayer.tetromino);
+
+    const pos = clonedPlayer.pos.x;
+    let offset = 1;
+    while (checkCollision(clonedPlayer, stage, { x: 0, y: 0 })) {
+      clonedPlayer.pos.x += offset;
+      offset = -(offset + (offset > 0 ? 1 : -1));
+      if (offset > clonedPlayer.tetromino[0].length) {
+        flip(clonedPlayer.tetromino);
+        clonedPlayer.pos.x = pos;
+        return;
+      }
+    }
+    setPlayer(clonedPlayer);
+  }
+
   function playerRotate(stage, dir) {
     const clonedPlayer = JSON.parse(JSON.stringify(player));
     clonedPlayer.tetromino = rotate(clonedPlayer.tetromino, dir);
@@ -52,5 +75,5 @@ export const usePlayer = () => {
     });
   }, []);
 
-  return [player, updatePlayerPos, resetPlayer, playerRotate];
+  return [player, updatePlayerPos, resetPlayer, playerRotate, playerFlip];
 };
