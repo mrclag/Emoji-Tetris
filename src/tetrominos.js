@@ -7,7 +7,7 @@ export const TETROMINOS = {
       [0, 'F', 'F']
     ],
     color: '223, 173, 36',
-    emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
+    emoji: 'https://i.ibb.co/qpx1QL2/wow.png'
   },
   I: {
     shape: [
@@ -18,7 +18,7 @@ export const TETROMINOS = {
       [0, 0, 'I', 0, 0]
     ],
     color: '80, 227, 230',
-    emoji: 'https://i.ibb.co/4ZT0y40/smiley-Emoji.png'
+    emoji: 'https://i.ibb.co/CwMxk0F/smiley.png'
   },
   L: {
     shape: [
@@ -27,7 +27,7 @@ export const TETROMINOS = {
       ['L', 'L', 'L']
     ],
     color: '223, 173, 36',
-    emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
+    emoji: 'https://i.ibb.co/Pc3X0RJ/sad.png'
   },
   N: {
     shape: [
@@ -37,7 +37,7 @@ export const TETROMINOS = {
       [0, 'N', 0, 0]
     ],
     color: '223, 173, 36',
-    emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
+    emoji: 'https://i.ibb.co/KFSbNSC/blush.png'
   },
   P: {
     shape: [
@@ -46,7 +46,7 @@ export const TETROMINOS = {
       [0, 0, 0]
     ],
     color: '223, 217, 36',
-    emoji: 'https://i.ibb.co/WcRpDxY/tears-Emoji.png'
+    emoji: 'https://i.ibb.co/cC3wdrQ/sunglasses.png'
   },
   T: {
     shape: [
@@ -55,16 +55,16 @@ export const TETROMINOS = {
       ['T', 'T', 'T']
     ],
     color: '223, 173, 36',
-    emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
+    emoji: 'https://i.ibb.co/FgjtCXm/tears-laughing.png'
   },
   U: {
     shape: [
-      [0, 0, 0],
       ['U', 0, 'U'],
-      ['U', 'U', 'U']
+      ['U', 'U', 'U'],
+      [0, 0, 0]
     ],
     color: '223, 173, 36',
-    emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
+    emoji: 'https://i.ibb.co/374MbmM/thinking.png'
   },
   V: {
     shape: [
@@ -73,7 +73,7 @@ export const TETROMINOS = {
       ['V', 'V', 'V']
     ],
     color: '223, 173, 36',
-    emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
+    emoji: 'https://i.ibb.co/J7S1xR7/scared.png'
   },
   W: {
     shape: [
@@ -82,7 +82,7 @@ export const TETROMINOS = {
       ['W', 0, 0]
     ],
     color: '48, 211, 56',
-    emoji: 'https://i.ibb.co/ggqbvC1/wink-Emoji.png'
+    emoji: 'https://i.ibb.co/ftrzHH5/wink-Emoji.png'
   },
   X: {
     shape: [
@@ -91,7 +91,7 @@ export const TETROMINOS = {
       [0, 'X', 0]
     ],
     color: '132, 61, 198',
-    emoji: 'https://i.ibb.co/7pRdwP3/thinking-Emoji.png'
+    emoji: 'https://i.ibb.co/xHghkTV/angry.png'
   },
   Y: {
     shape: [
@@ -101,7 +101,7 @@ export const TETROMINOS = {
       [0, 0, 0, 0]
     ],
     color: '227, 78, 78',
-    emoji: 'https://i.ibb.co/18RngZb/Sad-Face-Emoji-grande.png'
+    emoji: 'https://i.ibb.co/8cCvT5P/geek.png'
   },
   Z: {
     shape: [
@@ -110,7 +110,7 @@ export const TETROMINOS = {
       [0, 'Z', 'Z']
     ],
     color: '36, 95, 223',
-    emoji: 'https://i.ibb.co/0KfKkmB/madEmoji.png'
+    emoji: 'https://i.ibb.co/cFB0Sm0/silly.png'
   },
   M: {
     shape: [['M']],
