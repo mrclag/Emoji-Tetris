@@ -13,6 +13,11 @@ export const ControlWrapper = styled.div`
 
 export const ControlButton = styled.img`
   display: none;
+  -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
   @media screen and (max-width: 800px) {
     display: unset;
     color: white;

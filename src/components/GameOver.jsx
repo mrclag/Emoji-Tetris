@@ -31,7 +31,9 @@ export const GameOver = ({ isOpen, toggle, score, rows, level }) => {
 
   const [name, setName] = useState('');
 
-  const addScore = () => {
+  const maxAllowedScore = 300000;
+
+  const addScore = score => {
     firebase
       .firestore()
       .collection('highscores')
@@ -43,8 +45,13 @@ export const GameOver = ({ isOpen, toggle, score, rows, level }) => {
 
   const onSubmit = e => {
     e.preventDefault();
-    addScore();
-    toggle(false);
+    if (score > maxAllowedScore) {
+      console.log('CHEATER');
+      alert('CHEATER!!');
+    } else {
+      addScore(score);
+      toggle(false);
+    }
   };
 
   console.log('render');

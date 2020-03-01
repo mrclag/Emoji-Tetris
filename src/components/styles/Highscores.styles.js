@@ -5,12 +5,10 @@ export const HighscoreWrapper = styled.div`
   border: 3px solid #333;
   padding: 0 20px;
   margin: 0 20px;
-  font-size: 1
-  font-family: "Orbitron";
-  height: 300px;
+  font-family: 'Orbitron';
   min-width: 200px;
-  width: 200px;
-  
+  width: 250px;
+
   h2 {
     text-align: center;
   }
@@ -19,6 +17,8 @@ export const HighscoreWrapper = styled.div`
   }
   li {
     padding-left: 10px;
+    font-size: 13px;
+    margin-bottom: 5px;
   }
 
   @media screen and (max-width: 1100px) {
