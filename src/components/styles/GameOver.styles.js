@@ -56,6 +56,16 @@ export const Modal = styled(posed.div(modalPoses))`
     font-size: 1.25em;
     margin: 20px;
   }
+  .submit {
+    height: 30px;
+    width: 60px;
+    color: black;
+    background-color: #fac632;
+    border: none;
+    margin-top: 10px;
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+  }
 `;
 
 export const ModalBackground = styled(posed.div(modalBackgroundPoses))`
