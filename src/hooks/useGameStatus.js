@@ -5,7 +5,7 @@ export const useGameStatus = rowsCleared => {
   const [rows, setRows] = useState(0);
   const [level, setLevel] = useState(0);
 
-  const linePoints = [100, 300, 600, 1200];
+  const linePoints = [100, 300, 600, 1200, 2400];
 
   const calcScore = useCallback(() => {
     // We have score
