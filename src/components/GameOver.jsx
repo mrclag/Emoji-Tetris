@@ -71,7 +71,7 @@ export const GameOver = ({ isOpen, toggle, score, rows, level }) => {
           </div>
           <br />
           <form onSubmit={onSubmit}>
-            <label>Name</label>
+            <label>Name:</label>
             <input
               type="text"
               value={name}
