@@ -76,10 +76,10 @@ export const GameOver = ({ isOpen, toggle, score, rows, level }) => {
               type="text"
               value={name}
               onChange={e => setName(e.currentTarget.value)}
-              autofocus="true"
+              autoFocus={true}
               maxLength="14"
             />
-            <button className='submit'>Submit</button>
+            <button className="submit">Submit</button>
           </form>
         </div>
       </Modal>

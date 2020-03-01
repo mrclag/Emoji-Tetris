@@ -30,15 +30,20 @@ export const TETROMINOS = {
     emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
   },
   N: {
-    shape: [[0, 0, 'N', 0], [0, 'N', 'N', 0][(0, 'N', 0, 0)], [0, 'N', 0, 0]],
+    shape: [
+      [0, 0, 'N', 0],
+      [0, 'N', 'N', 0],
+      [0, 'N', 0, 0],
+      [0, 'N', 0, 0]
+    ],
     color: '223, 173, 36',
     emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
   },
   P: {
     shape: [
-      [0, 0, 0],
       ['P', 'P', 'P'],
-      ['P', 'P', 0]
+      ['P', 'P', 0],
+      [0, 0, 0]
     ],
     color: '223, 217, 36',
     emoji: 'https://i.ibb.co/WcRpDxY/tears-Emoji.png'
@@ -54,9 +59,9 @@ export const TETROMINOS = {
   },
   U: {
     shape: [
+      [0, 0, 0],
       ['U', 0, 'U'],
       ['U', 'U', 'U']
-      [0, 0, 0],
     ],
     color: '223, 173, 36',
     emoji: 'https://i.ibb.co/sJXtMSn/silly-Emoji.png'
@@ -108,7 +113,7 @@ export const TETROMINOS = {
     emoji: 'https://i.ibb.co/0KfKkmB/madEmoji.png'
   },
   M: {
-    shape: [['P']],
+    shape: [['M']],
     color: '227, 78, 78',
     emoji: 'https://i.ibb.co/X5HXZpS/rainbowpoop-Emoji.png'
   }
