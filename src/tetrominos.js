@@ -122,7 +122,7 @@ export const TETROMINOS = {
 export const randomTetromino = () => {
   const tetrominos = 'FILNPTUVWXYZ';
   let randTetromino = tetrominos[Math.floor(Math.random() * tetrominos.length)];
-  if (Math.random <= 0.05) {
+  if (Math.random() <= 0.05) {
     randTetromino = 'M';
   }
   return TETROMINOS[randTetromino];

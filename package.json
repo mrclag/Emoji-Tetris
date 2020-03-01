@@ -1,8 +1,8 @@
 {
-  "name": "tetris",
+  "name": "emojimino",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://emojitetris.com",
+  "homepage": "https://emojimino.com",
   "dependencies": {
     "firebase": "^7.5.2",
     "react": "^16.12.0",
