@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    touch-action: manipulation;
+    touch-action: manipulation !important;
   }
 `;
 

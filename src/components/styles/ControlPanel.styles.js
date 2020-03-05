@@ -18,6 +18,7 @@ export const ControlButton = styled.img`
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+  touch-action: manipulation;
   @media screen and (max-width: 800px) {
     display: unset;
     color: white;
