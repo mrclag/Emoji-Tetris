@@ -1,25 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.3b530ed1.chunk.css",
-    "main.js": "/static/js/main.9228e46c.chunk.js",
-    "main.js.map": "/static/js/main.9228e46c.chunk.js.map",
+    "main.js": "/static/js/main.a964a5b5.chunk.js",
+    "main.js.map": "/static/js/main.a964a5b5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f07848c4.js",
     "runtime-main.js.map": "/static/js/runtime-main.f07848c4.js.map",
     "static/js/2.3a85009d.chunk.js": "/static/js/2.3a85009d.chunk.js",
     "static/js/2.3a85009d.chunk.js.map": "/static/js/2.3a85009d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.77499328c4195e38284039cbc3256022.js": "/precache-manifest.77499328c4195e38284039cbc3256022.js",
+    "precache-manifest.8224916e81974d7036dca64f519d336a.js": "/precache-manifest.8224916e81974d7036dca64f519d336a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.3b530ed1.chunk.css.map": "/static/css/main.3b530ed1.chunk.css.map",
     "static/media/index.css": "/static/media/Pixel-LCD-7.e2897552.woff",
+    "static/media/down.png": "/static/media/down.fec509ad.png",
     "static/media/emojiwallpaper.jpg": "/static/media/emojiwallpaper.eb18f7da.jpg",
+    "static/media/left.png": "/static/media/left.da1e8475.png",
     "static/media/logo.png": "/static/media/logo.12fc1234.png",
-    "static/media/rotate-right.png": "/static/media/rotate-right.cf9ed1dd.png"
+    "static/media/right.png": "/static/media/right.b7576efa.png",
+    "static/media/rotate-right.png": "/static/media/rotate-right.9d57f6f3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f07848c4.js",
     "static/js/2.3a85009d.chunk.js",
     "static/css/main.3b530ed1.chunk.css",
-    "static/js/main.9228e46c.chunk.js"
+    "static/js/main.a964a5b5.chunk.js"
   ]
 }
