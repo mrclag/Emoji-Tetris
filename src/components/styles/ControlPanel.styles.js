@@ -11,14 +11,10 @@ export const ControlWrapper = styled.div`
   }
 `;
 
-export const ControlButton = styled.img`
+export const ControlButton = styled.div`
   display: none;
-  -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-  touch-action: manipulation;
+  background-image: url(${(props) => props.image});
+  background-size: cover;
   @media screen and (max-width: 800px) {
     display: unset;
     color: white;

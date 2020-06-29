@@ -12,13 +12,13 @@ const ControlPanel = ({
   playerRotate,
   stage,
   setDropTime,
-  level
+  level,
 }) => {
   return (
     <ControlWrapper>
-      <ControlButton src={left} alt="left" onClick={() => movePlayer(-1)} />
+      <ControlButton image={left} alt="left" onClick={() => movePlayer(-1)} />
       <ControlButton
-        src={down}
+        image={down}
         alt="down"
         onClick={() => {
           dropPlayer();
@@ -26,12 +26,12 @@ const ControlPanel = ({
         }}
       />
       <ControlButton
-        src={rotate}
+        image={rotate}
         alt="rotate"
         onClick={() => playerRotate(stage, 1)}
       />
 
-      <ControlButton src={right} alt="right" onClick={() => movePlayer(1)} />
+      <ControlButton image={right} alt="right" onClick={() => movePlayer(1)} />
     </ControlWrapper>
   );
 };

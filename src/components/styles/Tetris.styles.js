@@ -8,6 +8,9 @@ export const HeaderBar = styled.div`
   border-bottom: 2px solid black;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const LogoImg = styled.img`
