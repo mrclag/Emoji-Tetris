@@ -6,7 +6,7 @@ import firebase from '../firebase';
 
 function useOnClickOutside(ref, handler) {
   useEffect(() => {
-    const listener = event => {
+    const listener = (event) => {
       // Do nothing if clicking ref's element or descendent elements
       if (!ref.current || ref.current.contains(event.target)) {
         return;
@@ -33,17 +33,17 @@ export const GameOver = ({ isOpen, toggle, score, rows, level }) => {
 
   const maxAllowedScore = 300000;
 
-  const addScore = score => {
+  const addScore = (score) => {
     firebase
       .firestore()
       .collection('highscores')
       .add({
         username: name,
-        score: parseInt(score)
+        score: parseInt(score),
       });
   };
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     if (score > maxAllowedScore) {
       console.log('CHEATER');
@@ -54,7 +54,6 @@ export const GameOver = ({ isOpen, toggle, score, rows, level }) => {
     }
   };
 
-  console.log('render');
   return (
     <ModalBackground initialPose="closed" pose={isOpen ? 'open' : 'closed'}>
       <Modal ref={ref}>
@@ -75,7 +74,7 @@ export const GameOver = ({ isOpen, toggle, score, rows, level }) => {
             <input
               type="text"
               value={name}
-              onChange={e => setName(e.currentTarget.value)}
+              onChange={(e) => setName(e.currentTarget.value)}
               autoFocus={true}
               maxLength="14"
             />
